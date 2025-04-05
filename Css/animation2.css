@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(97, 96, 96);
+}
+.container{
+    width: 50px;
+    margin: 250px auto;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+}
+.dot1{
+    background-color: red;
+    animation: jump 0.4s 0.1s linear infinite;
+}
+.dot2{
+    background-color: blue;
+    animation: jump 0.5s 0.2s linear infinite;
+
+}
+.dot3{
+    background-color: rgb(170, 239, 170);
+    animation: jump 0.5s 0.3s linear infinite;
+
+}
+@keyframes jump{
+    50%{
+        transform: translate(0px,15px);
+    }
+}
